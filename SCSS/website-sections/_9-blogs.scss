@@ -1,0 +1,82 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+@use '../general-styles/gradients' as *;
+
+
+.blogs{
+    background: $color-theme-1;
+
+    &__container{
+
+        &--blog{
+            background: $color-theme-4;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            padding: $padding-st-v-l $padding-st-h-s;
+            border-radius: .5rem;
+            box-shadow: 3px 3px 8px rgba(0 0 0 / 0.05);
+            position: relative;
+
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                box-shadow: none;
+                transform: scale(.985);
+            }
+
+            &__date{
+                background-color: $color-theme-2;
+                color: $color-type-1;
+                font-size: $font-size-st-sc;
+                position: absolute;
+                top: 3rem;
+                left: 3rem;
+                display: flex;
+                flex-direction: column;
+
+                padding: $padding-st-v-s;
+                border-radius: inherit;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    background-color: $color-theme-3;
+                }
+
+                span:first-child{
+                    font-size: $font-size-st-m;
+                }
+
+            }
+
+            &__category{
+                color: $color-type-4;
+                font-size: $font-size-st-sc;
+                transition: inherit;
+
+                &:hover{
+                    color: $color-type-3;
+                }
+            }
+
+            &__desc{
+                font-size: $font-size-st-sc;
+                font-weight: $font-weight-regular;
+                color: rgba(0 0 0 / 0.65);
+            }
+
+            &__link{
+                background-color: $color-theme-3;
+                align-self: flex-start;
+
+                &:hover{
+                    background-color: $color-theme-2;
+                }
+                
+            }
+
+        }
+    }
+}

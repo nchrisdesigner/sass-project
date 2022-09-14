@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main-style.css" />
+    <title>EventGrid - Book Your Next Event</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Header Section -->
+      <header class="header overall-layout padd sec-flex">
+        <!-- Nav -->
+        <nav class="header__nav">
+          <a href="#" class="header__nav--logo">
+            <img src="./images/header/logo.svg" alt="Logo">
+          </a>
+
+          <div class="header__nav--hamburger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+          </div>
+
+          <ul class="header__nav--links">
+            <a href="#" class="header__nav--links__link">Home</a>
+            <a href="gallery.html" class="header__nav--links__link" target="_blank">Gallery</a>
+            <a href="pricing.html" class="header__nav--links__link" target="_blank">Pricing</a>
+            <a href="schedule.html" class="header__nav--links__link" target="_blank">Schedule</a>
+            <a href="speakers.html" class="header__nav--links__link" target="_blank">Speakers</a>
+            <a href="blog.html" class="header__nav--links__link" target="_blank">Blog</a>
+            <a href="contact.html" class="header__nav--links__link" target="_blank">Contact</a>
+          </ul>
+
+          <a href="pricing.html" class="header__nav--cta sec-link" target="_blank">Get Tickets
+            <i class="fa-solid fa-ticket"></i>
+          </a>
+        </nav>
+
+        <!-- Hero -->
+        <section class="header__hero">
+          <p class="header__hero--location">
+            <i class="fa-solid fa-location-dot"></i>
+            WaterFront Hotel, London
+          </p>
+
+          <h1 class="header__hero--title">
+            The Largest Conference In <span>Europe</span>
+          </h1>
+
+          <p class="header__hero--para sec-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis.
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          </p>
+
+          <a href="pricing.html" class="header__hero--tickets-link sec-link">Buy Ticket Now</a>
+        </section>
+      </header>
+
+      <!-- Countdown Section -->
+      <section class="countdown overall-layout padd">
+        <div class="countdown__content padd">
+          <!-- Days -->
+          <div class="countdown__content--day">
+            <div>
+              <p>364</p>
+              <p>Days</p>
+            </div>
+            <p>:</p>
+          </div>
+          <!-- Hours -->
+          <div class="countdown__content--hour">
+            <div>
+              <p>23</p>
+              <p>Hours</p>
+            </div>
+            <p>:</p>
+          </div>
+          <!-- Minutes -->
+          <div class="countdown__content--minute">
+            <div>
+              <p>59</p>
+              <p>Minute</p>
+            </div>
+            <p>:</p>
+          </div>
+          <!-- Seconds -->
+          <div class="countdown__content--second">
+            <div>
+              <p>59</p>
+              <p>Second</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features overall-layout padd sec-flex">
+        <h6 class="features__mini-title sec-mini-title">
+          Why Join EventGrids?
+        </h6>
+        <h2 class="features__title sec-title">Why you should join an Event</h2>
+        <p class="features__para sec-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugit, aliquid numquam nesciunt incidunt nisi. <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span></p>
+
+        <!-- Features Container -->
+        <div class="features__container responsive-grid">
+          <!-- Feature 1 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-microphone features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">02</h3>
+            <h4 class="features__container--feature__title">Great Speakers</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+          <!-- Feature 2 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-user-group features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">03</h3>
+            <h4 class="features__container--feature__title">New People</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+          <!-- Feature 3 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-calendar-check features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">04</h3>
+            <h4 class="features__container--feature__title">Global Event</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+          <!-- Feature 4 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-lightbulb features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">05</h3>
+            <h4 class="features__container--feature__title">Get Inspired</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+          <!-- Feature 5 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-people-group features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">06</h3>
+            <h4 class="features__container--feature__title">Networkingn Session</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+          <!-- Feature 6 -->
+          <div class="features__container--feature">
+
+            <i class="fa-solid fa-face-smile features__container--feature__icon"></i>
+
+            <h3 class="features__container--feature__number">01</h3>
+            <h4 class="features__container--feature__title">Meet New Faces</h4>
+            <p class="features__container--feature__desc sec-sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum delectus quibusdam culpa?</p>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about overall-layout padd">
+        <!-- Image -->
+        <figure class="about__img">
+          <img src="images/about/about-image.jpg" alt="Event" loading="lazy">
+        </figure>
+        <!-- Content -->
+        <div class="about__content">
+          <h6 class="about__content--mini-title sec-mini-title">Get Experience</h6>
+          <h2 class="about__content--title sec-title">About The Event</h2>
+          <p class="about__content--para sec-para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis mollitia impedit! Aut omnis, totam accusamus consectetur veritatis quasi quidem consequuntur.
+            <span>Sit amet consectetur adipisicing elit. Illum dicta corporis asperiores.</span>
+          </p>
+
+          <p class="about__content--date sec-para">
+            <span>25th</span>
+            Dec 2022
+          </p>
+        </div>
+      </section>
+
+      <!-- Speakers Section -->
+      <section class="speakers overall-layout padd sec-flex">
+        <h6 class="speakers__mini-title sec-mini-title">Speakers</h6>
+        <h2 class="speakers__title sec-title">Today's Performers</h2>
+        <p class="speakers__desc sec-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore explicabo at aliquid blanditiis quam.
+          <span>Consectetur adipisicing elit. Eius doloremque error provident.</span>
+        </p>
+
+        <!-- Speakers Container -->
+        <div class="speakers__container responsive-grid">
+          <!-- Speaker 1 -->
+          <div class="speakers__container--speaker">
+            <!-- Image -->
+            <figure class="speakers__container--speaker__img">
+              <img src="./images/speakers/speaker-1.jpg" alt="Event Performer" loading="lazy">
+            </figure>
+
+            <!-- Content -->
+            <h3 class="speakers__container--speaker__name sec-sub-title">Fredric Martinsson</h3>
+            <p class="speakers__container--speaker__role sec-sub-para">Founder, Ediltz</p>
+
+            <div class="speakers__container--speaker__social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+          <!-- Speaker 2 -->
+          <div class="speakers__container--speaker">
+            <!-- Image -->
+            <figure class="speakers__container--speaker__img">
+              <img src="./images/speakers/speaker-2.jpg" alt="Event Performer" loading="lazy">
+            </figure>
+
+            <!-- Content -->
+            <h3 class="speakers__container--speaker__name sec-sub-title">Melissa Lundryn</h3>
+            <p class="speakers__container--speaker__role sec-sub-para">Lead Designer</p>
+
+            <div class="speakers__container--speaker__social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+          <!-- Speaker 3 -->
+          <div class="speakers__container--speaker">
+            <!-- Image -->
+            <figure class="speakers__container--speaker__img">
+              <img src="./images/speakers/speaker-3.jpg" alt="Event Performer" loading="lazy">
+            </figure>
+
+            <!-- Content -->
+            <h3 class="speakers__container--speaker__name sec-sub-title">Andrio Limuya</h3>
+            <p class="speakers__container--speaker__role sec-sub-para">Web Developer</p>
+
+            <div class="speakers__container--speaker__social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <!-- Events Section -->
+      <section class="events overall-layout padd sec-flex">
+        <h6 class="events__mini-title sec-mini-title">
+          Events
+        </h6>
+        <h2 class="events__title sec-title">
+          Events Schedule
+        </h2>
+        <p class="events__desc sec-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, unde cumque! Inventore, sapiente.
+          <span> Blanditiis, ad illo? Quae, voluptatum adipisicing elit.</span>
+        </p>
+
+        <div class="events__days">
+          <!-- Day 1 - current / upcoming event -->
+          <div class="events__days--day current">
+            <p class="sec-sub-title">Day 1</p>
+            <p class="sec-sub-para">May 30, 2023</p>
+          </div>
+          <!-- Day 2 -->
+          <div class="events__days--day">
+            <p class="sec-sub-title">Day 2</p>
+            <p class="sec-sub-para">June 30, 2023</p>
+          </div>
+          <!-- Day 3 -->
+          <div class="events__days--day">
+            <p class="sec-sub-title">Day 3</p>
+            <p class="sec-sub-para">August 18, 2023</p>
+          </div>
+          <!-- Day 4 -->
+          <div class="events__days--day">
+            <p class="sec-sub-title">Day 4</p>
+            <p class="sec-sub-para">November 27, 2023</p>
+          </div>
+        </div>
+
+        <div class="events__timing">
+
+          <div class="events__timing--event">
+
+            <div class="events__timing--event__date-time">
+              <p>10</p>
+              <div>
+                <p class="sec-sub-title">May</p>
+                <p class="sec-sub-para">08:00 AM - 18:45 PM</p>
+              </div>
+            </div>
+
+            <div class="events__timing--event__desc">
+
+              <figure>
+                <img loading="lazy" src="images/events/event-1.jpg" alt="event image">
+              </figure>
+
+              <div>
+                <p class="sec-sub-title">
+                  A Very Cool Event Unravels
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-user"></i>
+                  <span class="sec-sub-para">Fredric Martinsson</span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span class="sec-sub-para">
+                    At: Prism Club, London
+                  </span>
+                </p>
+
+              </div>
+
+            </div>
+
+            <a href="#" class="events__timing--event__link sec-link">Read More</a>
+
+          </div>
+
+        </div>
+
+        <a href="#" class="events__more-events sec-link">More Events</a>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing overall-layout padd sec-flex">
+        <h6 class="pricing__mini-title sec-mini-title">Pricing</h6>
+        <h2 class="pricing__title sec-title">Pricing & Plans</h2>
+        <p class="pricing__desc sec-para">Lorem ipsum dolor sit amet, consectetur adipisicing.
+          <span>Consectetur adipisicing elit. Accusantium fugit voluptates vel eum molestias.</span>
+        </p>
+
+        <div class="pricing__container responsive-grid">
+          <!-- Pricing 1 -->
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Regular</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">Available tikets for this plan</p>
+            <h4 class="pricing__container--plan__price">10€</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link">Get Ticket</a>
+
+            <ul class="pricing__container--plan__features">
+              <li>One Day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Keynote Talk</li>
+            </ul>
+          </div>
+          <!-- Pricing 2 -->
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Exclusive</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">Available tikets for this plan</p>
+            <h4 class="pricing__container--plan__price">29€</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link">Get Ticket</a>
+
+            <ul class="pricing__container--plan__features">
+              <li>Three Day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Keynote Talk</li>
+            </ul>
+          </div>
+          <!-- Pricing 3 -->
+          <div class="pricing__container--plan">
+            <h5 class="pricing__container--plan__type">Premium</h5>
+            <p class="pricing__container--plan__ticket sec-sub-para">Available tikets for this plan</p>
+            <h4 class="pricing__container--plan__price">99€</h4>
+            <a href="#" class="pricing__container--plan__get-ticket sec-link">Get Ticket</a>
+
+            <ul class="pricing__container--plan__features">
+              <li>Five Day Conference Ticket</li>
+              <li>Posters Session</li>
+              <li>Coffee-break & Networking</li>
+              <li>Keynote Talk</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials overall-layout padd sec-flex">
+        <h6 class="testimonials__mini-title sec-mini-title">Testimonials</h6>
+        <h2 class="testimonials__title sec-title">What People Say About Us</h2>
+        <p class="testimonials__desc sec-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad natus sint quo nisi.
+          <span>Amet consectetur adipisicing elit. Facere, delectus quibusdam.</span>
+        </p>
+
+        <!-- testimonials container -->
+        <div class="testimonials__container responsive-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+
+              <figure class="testimonials__container--testimonial__img">
+                <img src="images/testimonials/man.jpg" alt="Customer's Testimonial" loading="lazy">
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Will Higgins</h3>
+                <p class="sec-sub-para">Developer Expert</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, rem? Aut blanditiis quasi totam minus aspernatur eaque officiis, vel, nihil, earum amet rem recusandae harum.</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+
+              <figure class="testimonials__container--testimonial__img">
+                <img src="images/testimonials/woman-1.jpg" alt="Customer's Testimonial" loading="lazy">
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Jessica Wes</h3>
+                <p class="sec-sub-para">Senior Designer</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, rem? Aut blanditiis quasi totam minus aspernatur eaque officiis, vel, nihil, earum amet rem recusandae harum.</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonials__container--testimonial">
+            <div class="testimonials__container--testimonial__personal-info">
+
+              <figure class="testimonials__container--testimonial__img">
+                <img src="images/testimonials/woman-2.jpg" alt="Customer's Testimonial" loading="lazy">
+              </figure>
+
+              <div>
+                <h3 class="sec-sub-title">Julie Camacho</h3>
+                <p class="sec-sub-para">UX Designer</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+
+            </div>
+
+            <p class="testimonials__container--testimonial__desc sec-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, rem? Aut blanditiis quasi totam minus aspernatur eaque officiis, vel, nihil, earum amet rem recusandae harum.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Blogs Section -->
+      <section class="blogs overall-layout padd sec-flex">
+        <h6 class="blogs__mini-title sec-mini-title">
+          Blogs
+        </h6>
+        <h2 class="blogs__title sec-title">Our Latest News</h2>
+        <p class="blogs__desc sec-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellendus suscipit nam at sapiente vero nostrum necessitatibus facere.
+          <span>Dolor sit amet consectetur adipisicing elit. Voluptatum, in vel.</span>
+        </p>
+
+        <!-- Blogs Container -->
+        <div class="blogs__container responsive-grid">
+
+          <!-- Blog 1-->
+          <div class="blogs__container--blog">
+
+            <h5 class="blogs__container--blog__date">
+              <span>30</span>
+              <span>Apr</span>
+            </h5>
+
+            <figure class="blogs__container--blog__img">
+              <img loading="lazy" src="images/blog-page/blog-5.jpg" alt="Blog Post">
+            </figure>
+
+            <h5 class="blogs__container--blog__category">Events</h5>
+
+            <h3 class="blogs__container--blog__title sec-sub-title">3 Best Practises for Keeping Your Event Clients Happy</h3>
+
+            <p class="blogs__container--blog__desc sec-sub para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum facilis labore quam quaerat consectetur autem est ab soluta odio tempora! Reiciendis eius alias est animi!
+            </p>
+
+            <a href="#" class="blogs__container--blog__link sec-link">
+              Read More
+            </a>
+
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="blogs__container--blog">
+
+            <h5 class="blogs__container--blog__date">
+              <span>28</span>
+              <span>May</span>
+            </h5>
+
+            <figure class="blogs__container--blog__img">
+              <img loading="lazy" src="images/blog-page/blog-6.jpg" alt="Blog Post">
+            </figure>
+
+            <h5 class="blogs__container--blog__category">Conference</h5>
+
+            <h3 class="blogs__container--blog__title sec-sub-title">Adding a new Digital Dimension toy Your Next Special Event</h3>
+
+            <p class="blogs__container--blog__desc sec-sub para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum facilis labore quam quaerat consectetur autem est ab soluta odio tempora! Reiciendis eius alias est animi!
+            </p>
+
+            <a href="#" class="blogs__container--blog__link sec-link">
+              Read More
+            </a>
+
+          </div>
+
+          <!-- Blog 3 -->
+          <div class="blogs__container--blog">
+
+            <h5 class="blogs__container--blog__date">
+              <span>14</span>
+              <span>Jun</span>
+            </h5>
+
+            <figure class="blogs__container--blog__img">
+              <img loading="lazy" src="images/blog-page/blog-4.jpg" alt="Blog Post">
+            </figure>
+
+            <h5 class="blogs__container--blog__category">Marketing</h5>
+
+            <h3 class="blogs__container--blog__title sec-sub-title">Proven Marketing Strategies to Boost your Digital Product Sales</h3>
+
+            <p class="blogs__container--blog__desc sec-sub para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum facilis labore quam quaerat consectetur autem est ab soluta odio tempora! Reiciendis eius alias est animi!
+            </p>
+
+            <a href="#" class="blogs__container--blog__link sec-link">
+              Read More
+            </a>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta overall-layout padd sec-flex">
+        <h5 class="cta__mini-title pricing__container--plan__type">Hurry Up</h5>
+        <h2 class="cta__title sec-title">Europe's Leading Conference
+          <span>Book Your Seat Now.</span>
+        </h2>
+        <p class="cta__desc sec-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, architecto harum? Animi.
+          <span>Amet consectetur adipisicing elit. Aspernatur eveniet sed recusandae.</span>
+        </p>
+
+        <a href="#" class="cta__link sec-link header__nav--cta">Get Tickets
+          <i class="fa-solid fa-ticket"></i>
+        </a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer overall-layout padd">
+        <div class="footer__info">
+          <figure class="footer__info--logo">
+            <img src="images/footer/dark-logo.svg" alt="Logo" />
+          </figure>
+
+          <p class="footer__info--desc sec-sub-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            harum assumenda. Itaque exercitationem rerum non, beatae,
+            consequuntur ea officiis ipsa labore praesentium dolores eligendi.
+          </p>
+
+          <p class="footer__info--social sec-sub-para">Follow Us On:</p>
+
+          <div class="footer__info--social-container">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="footer__quick-links">
+          <h3 class="footer__quick-links--title sec-sub-title">Quick Links</h3>
+
+          <ul class="footer__quick-links--container">
+            <li class="footer__quick-links--container__link">
+              <a href="#">Get Directions</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#">Sponsor</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#">What We Offer</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#">Recent Events</a>
+            </li>
+            <li class="footer__quick-links--container__link">
+              <a href="#">Insights</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__explore-more">
+          <h3 class="footer__explore-more--title sec-sub-title">
+            Explore More
+          </h3>
+
+          <ul class="footer__explore-more--container">
+            <li class="footer__explore-more--container__link">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Our Pricing</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">FAQs</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Guides</a>
+            </li>
+            <li class="footer__explore-more--container__link">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h3 class="footer__newsletter--title sec-sub-title">
+            Subscribe to our Newsletter
+          </h3>
+
+          <form class="footer__newsletter--form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email Address" />
+            <input class="sec-link" type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </footer>
+
+    </main>
+    
+    
+
+    <script defer src="js/app.js"></script>
+  </body>
+</html>

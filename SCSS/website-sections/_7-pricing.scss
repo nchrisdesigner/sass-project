@@ -1,0 +1,123 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+@use '../general-styles/gradients' as *;
+
+.pricing{
+    background: 
+    $gradient-primary,
+    url('../images/pricing/pricing-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+
+    &__mini-title{
+        color: $color-type-1;
+
+        &::before,
+        &::after{
+            background: $color-type-1;
+        }
+    }
+    
+    &__title{
+        color: $color-theme-1;      
+    }
+
+    &__desc{
+        color: rgba($color-theme-4,.75)
+    }
+
+    &__container{
+
+        &--plan{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2rem;
+
+            background-color: $color-theme-4;
+            padding: $padding-st-v-xl $padding-st-h-l;
+            border-radius: .5rem;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                transform: translateY(-1rem);
+            }
+
+            &__type{
+                font-size: $font-size-st-sc;
+                padding: $padding-st-v-s $padding-st-h-s;
+                border-radius: 5rem;
+            }
+
+            &:nth-child(2n+1) &__type{
+                border: 2px solid rgba($color-theme-3, 0.5);
+                color: $color-type-4;
+            }
+            &:nth-child(2n) &__type{
+                border: 2px solid rgba($color-theme-2, 0.5);
+                color: $color-type-3;
+            }
+
+            &__ticket{
+                font-weight: $font-weight-regular;
+                text-align: center;
+            }
+
+            &__price{
+                font-size: $font-size-st-lc;
+                font-weight: $font-weight-bold;
+            }
+
+            &:nth-child(2n+1) &__get-ticket{
+                background-color: $color-theme-3;
+
+                &:hover{
+                    background-color: $color-theme-2;
+                }
+            }
+            &:nth-child(2n) &__get-ticket{
+                background-color: $color-theme-2;
+
+                &:hover{
+                    background-color: $color-theme-3;
+                }
+            }
+
+            &__get-ticket{
+                margin-bottom: 2rem;
+                position: relative;
+
+                &::before,
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 50%;
+                    background-color: $color-theme-4 ;
+                }
+                &::before{
+                    left: -1rem;
+                }
+                &::after{
+                    right: -1rem;
+                }
+            }
+
+            &__features{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                li{
+                    font-size: calc($font-size-st-sc - .2rem);
+                    color: rgba($color-type-2, .6);
+                }
+            }
+        }
+    }
+}

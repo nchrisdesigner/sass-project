@@ -1,0 +1,8 @@
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.sec-sub-para{
+    font-size: $font-size-st-sc;
+    font-weight: $font-weight-bold;
+    color: rgba($color-type-2, 0.5);
+}

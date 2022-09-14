@@ -1,0 +1,14 @@
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.sec-para{
+    font-size: $font-size-st-sc;
+    color: $color-type-2;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    span{
+        display: block;
+    }
+}
+

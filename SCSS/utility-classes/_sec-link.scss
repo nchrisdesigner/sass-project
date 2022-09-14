@@ -1,0 +1,10 @@
+@use "../general-styles/colors" as *;
+@use "../general-styles/typography" as *;
+@use "../general-styles/padding" as *;
+
+.sec-link,
+input[type="submit"]{
+    color: $color-link-1;
+    font-size: $font-size-st-sc;
+    padding: $padding-st-v-s $padding-st-h-l;
+}

@@ -1,0 +1,45 @@
+:root {
+    font-size: 62.5%;
+  }
+  
+  //     fs     = Font Size
+  //     fw     = Font Weight
+  
+  //     -------------------- Sizing Nature
+  //     d      = dynamic
+  //     st     = static
+  
+  //     -------------------- Sizing
+  //     xl      = extra large
+  //     l      = large
+  //     m      = medium
+  //     s      = small
+  //     xs     = extra small
+  //     c      = customized
+  
+    $font-size-d-lc: calc(3rem + 3.5vw);
+    $font-size-d-l: calc(2rem + 3vw);
+    $font-size-d-mc: calc(2rem + 2.5vw);
+    $font-size-d-m: calc(1rem + 2vw);
+    $font-size-d-sc: calc(1rem + 1.5vw);
+    $font-size-d-s: calc(1rem + 1vw);
+
+  
+
+    $font-size-st-xl: 4rem;
+    $font-size-st-lc: 3.5rem;
+    $font-size-st-l: 3rem;
+    $font-size-st-mc: 2.5rem;
+    $font-size-st-m: 2rem;
+    $font-size-st-sc: 1.5rem;
+    $font-size-st-s: 1rem;
+
+
+  
+    $font-weight-thin: 100;
+    $font-weight-light: 300;
+    $font-weight-regular: 400;
+    $font-weight-medium: 500;
+    $font-weight-bold: 700;
+    $font-weight-black-fw: 900;
+

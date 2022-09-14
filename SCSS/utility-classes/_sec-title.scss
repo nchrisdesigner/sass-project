@@ -1,0 +1,9 @@
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.sec-title{
+    font-size: $font-size-d-sc;
+    font-weight: font-weight-black-fw;
+    color: $color-type-2;
+    text-align: center;
+}

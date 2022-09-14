@@ -1,0 +1,46 @@
+// ----------*----------  Padding
+
+//       pad    = Padding
+
+//       -------------------- Sizing Nature
+//       d      = dynamic
+//       st     = static
+
+//       -------------------- Sizing
+//       l      = large
+//       m      = medium
+//       s      = small
+//       xs     = extra small
+//       c      = customized
+
+// -------------------- Orientation
+//       v      = vertical   (top & bottom)
+//       h      = horizontal (right & left)
+
+  $padding-d-v-l: calc(2rem + 12vh);
+  $padding-d-v-mc: calc(1rem + 8vh);
+  $padding-d-v-m: calc(1rem + 6vh);
+  $padding-d-v-sc: calc(1rem + 4vh);
+  $padding-d-v-s: calc(1rem + 1vh);
+
+
+  $padding-d-h-l: calc(2rem + 12vw);
+  $padding-d-h-mc: calc(1rem + 8vw);
+  $padding-d-h-m: calc(1rem + 6vw);
+  $padding-d-h-sc: calc(1rem + 4vw);
+  $padding-d-h-s: calc(1rem + 2vw);
+  $padding-d-h-xs: calc(1rem + 1vw);
+
+
+  $padding-st-v-xl: 4rem;
+  $padding-st-v-lc: 3rem;
+  $padding-st-v-l: 2rem;
+  $padding-st-v-m: 1.5rem;
+  $padding-st-v-s: 1rem;
+
+
+  $padding-st-h-l: 3rem;
+  $padding-st-h-m: 2.5rem;
+  $padding-st-h-s: 2rem;
+  $padding-st-h-xs: 1.5rem;
+

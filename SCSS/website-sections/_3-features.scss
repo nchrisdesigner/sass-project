@@ -1,0 +1,99 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.features{
+    background-color: $color-theme-1;
+    padding-top: 0;
+
+    &__container{
+
+        &--feature{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            place-items: start;
+            gap: 1.5rem;
+
+            background-color: $color-theme-4;
+            border-radius: .5rem;
+            padding: $padding-st-v-lc $padding-st-h-l;
+            box-shadow: 3px 3px 7px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+
+            &__icon{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: $font-size-st-mc;
+                // padding: $padding-st-v-m $padding-st-h-xs;
+                width: 6rem;
+                height: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-type-1;
+                background-color: $color-theme-3;
+                border-radius: .5rem;
+                transition: all .3s ease-in-out;
+            }
+
+            &__number{
+                grid-column: 4/5;
+                grid-row: 1/2;
+                justify-self: end;
+                font-size: $font-size-st-xl;
+                color: rgba($color-type-2, 0.05);
+            }
+
+            &__title{
+                grid-column: 1/-1;
+                grid-row: 2/3;
+                font-size: $font-size-st-m;
+            }
+
+            &__desc{
+                grid-column: 1/-1;
+                grid-row: 3/4;
+            }
+
+            // Pseudo elements before and after
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+                height: 30%;
+                width: 2rem;
+                background-repeat: no-repeat;
+                transition: all .25s ease-in;
+            }
+
+            &::before{
+                top: 0;
+                left: 0;
+                background-image: url('../images/features/dots-blue.svg')
+            }
+            &::after{
+                bottom: 0;
+                right: 0;
+                background-image: url('../images/features/dots-pink.svg')
+            }
+
+            @media (hover){
+                &::before{
+                    left: -5rem;
+                }
+                &::after{
+                    right: -5rem;
+                }
+
+                &:hover::before{
+                    left: 0;
+                }
+                &:hover::after{
+                    right:0;
+                }
+            }
+        } 
+    }
+}

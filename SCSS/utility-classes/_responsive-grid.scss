@@ -1,0 +1,9 @@
+.responsive-grid{
+    // Flex Basis:100% but since it's flex-direction column flex basis refers to height, instead of flex basis use width
+    
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}

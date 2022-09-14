@@ -1,0 +1,95 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.speakers{
+
+    &__mini-title{
+        &::before{
+            left: -40%;
+        }
+        &::after{
+            right: -40%;
+        }
+    }
+
+    &__container{
+
+        &--speaker{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(9,min-content) 2rem repeat(2,min-content);
+
+            position: relative;
+            overflow: hidden;
+
+            &__img{
+                grid-column: 1/-1;
+                grid-row: 1/10;
+
+                img{
+                    border-radius: .5rem;
+                }
+            }
+
+            &__name{
+                grid-column: 2/-1;
+                grid-row: 11/12;
+            }
+
+            &__role{
+                grid-column: 2/-1;
+                grid-row: 12/13;
+            }
+
+            &__social{
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                transition: all .3s ease-in-out;
+                display: flex;
+                gap: 1rem;
+
+                i{
+                    font-size: $font-size-st-mc;
+                    color: $color-type-1;
+                    // padding: $padding-st-v-s;
+                    width: 4rem;
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: .5rem;
+                    opacity: .75;
+                }
+
+                i:first-child{
+                    background-color: $color-facebook;
+                }
+                i:nth-child(2){
+                    background-color: $color-twitter;
+                }
+                i:nth-child(3){
+                    background-color: $color-linkedin;
+                }
+                i:last-child{
+                    background-color: $color-instagram;
+                }
+            }
+
+            @media (hover){
+                &__social{
+                    opacity: 0;
+                    left: -10rem;
+                }
+
+                &:hover &__social{
+                    opacity: 1;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}

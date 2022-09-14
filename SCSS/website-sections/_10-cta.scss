@@ -1,0 +1,22 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+@use '../general-styles/gradients' as *;
+
+.cta{
+    background: 
+    $gradient-primary,
+    url('../images/call-action/call-bg.jpg') center/cover;
+
+    &__mini-title{
+        border: 2px solid $color-theme-4;
+    }
+    &__mini-title,
+    &__title{
+        color: $color-theme-4 ;
+    }
+    &__desc{
+        color: rgba($color-theme-4, .75) ;
+        margin-bottom: 2rem;
+    }
+}

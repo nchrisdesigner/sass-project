@@ -1,0 +1,21 @@
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.sec-sub-title{
+    font-size: $font-size-st-mc;
+    font-weight: $font-weight-medium;
+    color: $color-type-3;
+    transition: all .2s ease-in-out;
+
+    @media (hover){
+
+        &{
+            color: $color-type-2;
+        }
+
+        &:hover{
+            color: $color-type-3;
+        }
+    }
+    
+}

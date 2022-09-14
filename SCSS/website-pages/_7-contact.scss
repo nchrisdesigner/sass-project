@@ -1,0 +1,68 @@
+@use '../general-styles/padding' as *;
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+@use '../general-styles/gradients' as *;
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem 2rem;
+
+    &__content,
+    &__form{
+        flex-basis: 50%;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    &__content{
+
+        &--title,
+        &--desc{
+            text-align: left;
+        }
+
+        &--desc{
+            margin-top: 1rem;
+            margin-bottom: 0;
+            color: rgba(0, 0, 0, 0.543);
+        }
+    }
+
+    &__form{
+
+        fieldset{
+            display: flex;
+            gap: 1rem;
+
+            input{
+                flex-grow: 1;
+            }
+        }
+
+        input,
+        textarea{
+            padding: $padding-st-v-m $padding-st-h-s;
+            border: 1px solid rgba($color-type-2, .3);
+            font-size: $font-size-st-sc;
+            width: 100%;
+        }
+
+        input[type="submit"]{
+            color: #fff;
+            background: $color-theme-3;
+            cursor: pointer;
+            border: none;
+           
+            &:hover{
+                background: $color-theme-2;
+            }
+        }
+
+        textarea{
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}

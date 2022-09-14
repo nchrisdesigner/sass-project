@@ -1,0 +1,32 @@
+@use '../general-styles/colors' as *;
+@use '../general-styles/typography' as *;
+
+.sec-mini-title{
+    font-size: $font-size-st-sc;
+    color: $color-type-3;
+    margin-bottom: -1rem;
+
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        width: 2rem;
+        height: .2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $color-theme-2;
+    }
+
+    &::before{
+        // left: -20%;
+        left: -2.5rem;
+    }
+
+    &::after{
+        // right: -20%;
+        right: -2.5rem;
+    }
+}

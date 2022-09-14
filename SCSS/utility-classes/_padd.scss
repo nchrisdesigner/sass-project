@@ -1,0 +1,5 @@
+@use '../general-styles/padding' as *;
+
+.padd{
+    padding: $padding-d-v-mc $padding-d-h-mc;
+}
